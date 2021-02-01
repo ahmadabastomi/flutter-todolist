@@ -15,6 +15,10 @@ class PageBloc extends Bloc<PageEvent, PageState> {
   ) async* {
     if (event is GoToSplashPage) {
       yield OnSplashPage();
+    } else if (event is GoToSignUpPage) {
+      yield OnSignUpPage();
+    } else if (event is GoToSignInPage) {
+      yield OnSignInPage();
     }
   }
 }

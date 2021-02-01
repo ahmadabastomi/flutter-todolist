@@ -10,3 +10,7 @@ abstract class PageState extends Equatable {
 class OnInitialPage extends PageState {}
 
 class OnSplashPage extends PageState {}
+
+class OnSignUpPage extends PageState {}
+
+class OnSignInPage extends PageState{}

@@ -39,7 +39,9 @@ class SplashPage extends StatelessWidget {
                       width: MediaQuery.of(context).size.width - 80,
                       height: 45,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.read<PageBloc>().add(GoToSignUpPage());
+                        },
                         style: ElevatedButton.styleFrom(primary: mainColor),
                         child: Text(
                           'Get Started',
@@ -54,7 +56,9 @@ class SplashPage extends StatelessWidget {
                       width: MediaQuery.of(context).size.width - 80,
                       height: 45,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.read<PageBloc>().add(GoToSignInPage());
+                        },
                         style: ElevatedButton.styleFrom(primary: Colors.white),
                         child: Text(
                           'Sign In',

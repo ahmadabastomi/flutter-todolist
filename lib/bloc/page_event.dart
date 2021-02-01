@@ -8,3 +8,7 @@ abstract class PageEvent extends Equatable {
 }
 
 class GoToSplashPage extends PageEvent {}
+
+class GoToSignUpPage extends PageEvent {}
+
+class GoToSignInPage extends PageEvent {}
